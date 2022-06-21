@@ -19,7 +19,7 @@ public class TesteEmail extends TestCase {
     @Test
     public static void testar_email_mais_50_caracteres() {
         boolean isValid = Pessoa.emailValid("email_teste_muito_longo_nao_deve_ser_valido@dominio.com.br");
-        assertTrue(isValid);
+        assertEquals(true, isValid);
     }
 
 }
